@@ -8,6 +8,11 @@
  */
 public class SimpleInterest {
 	public static void main(String[] args) {
-    	
+    	float p = Float.parseFloat(args[0]);
+    	float r = Float.parseFloat(args[1]);
+    	float t = Float.parseFloat(args[2]);
+
+    	Float a = p * (1 + r * t);
+    	System.out.println("Result " + a);
 	}
 }

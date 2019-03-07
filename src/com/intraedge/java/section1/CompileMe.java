@@ -9,6 +9,7 @@ public class CompileMe {
 		    if(x>3) {
 		        System.out.println("big x");
 		    }
+		    x++;
 		}
 	}
 }

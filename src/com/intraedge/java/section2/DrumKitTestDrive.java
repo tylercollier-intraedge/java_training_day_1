@@ -3,31 +3,38 @@
  * bang bang ba-bang
  * ding ding da-ding
  */
-// d.playSnare();
 
-// DrumKit d = new DrumKit();
 
-// boolean topHat = true;
-// boolean snare = true;
 
-// void playSnare() {
-	// System.out.println("bang bang ba-bang")
-//}
+class DrumKitTestDrive {
+    public static void main(String args[]) {
 
-// public static void main(String args[]) {
-	
-// if(d.snare == true) {
-	// d.playSnare();
-//}
 
-// d.snare = false;
+        DrumKit d = new DrumKit();
 
-// class DrumKitTestDrive {
-	
-// d.playTopHat();
+        if (d.snare == true) {
+            d.playSnare();
+        }
 
-// class DrumKit {
-	
-// void playTopHat() {
-	// System.out.println("ding ding da-ding");	
-//}
+        d.snare = false;
+
+        d.playSnare();
+        d.playTopHat();
+    }
+}
+
+ class DrumKit {
+     boolean topHat = true;
+     boolean snare = true;
+     void playTopHat() {
+         System.out.println("ding ding da-ding");
+     }
+
+     void playSnare() {
+         if (this.snare) {
+
+             System.out.println("bang bang ba-bang");
+         }
+     }
+
+ }

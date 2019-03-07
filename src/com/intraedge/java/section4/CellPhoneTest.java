@@ -18,7 +18,7 @@ class CellPhone {
 		carrier = carrier;
 	}
 	
-	void getCarrier() {
+	String getCarrier() {
 		return carrier;
 	}
 }
